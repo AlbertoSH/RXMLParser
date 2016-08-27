@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rxml-parser/rxml-parser.iml" filepath="$PROJECT_DIR$/.idea/modules/rxml-parser/rxml-parser.iml" group="rxml-parser" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rxml-parser-project.iml" filepath="$PROJECT_DIR$/.idea/modules/rxml-parser-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rxml-parser-project_main.iml" filepath="$PROJECT_DIR$/.idea/modules/rxml-parser-project_main.iml" group="rxml-parser-project" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rxml-parser-project_test.iml" filepath="$PROJECT_DIR$/.idea/modules/rxml-parser-project_test.iml" group="rxml-parser-project" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rxml-parser-sample/rxml-parser-sample.iml" filepath="$PROJECT_DIR$/.idea/modules/rxml-parser-sample/rxml-parser-sample.iml" group="rxml-parser-sample" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rxml-parser-sample/rxml-parser-sample_main.iml" filepath="$PROJECT_DIR$/.idea/modules/rxml-parser-sample/rxml-parser-sample_main.iml" group="rxml-parser-sample" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rxml-parser-sample/rxml-parser-sample_test.iml" filepath="$PROJECT_DIR$/.idea/modules/rxml-parser-sample/rxml-parser-sample_test.iml" group="rxml-parser-sample" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rxml-parser/rxml-parser_main.iml" filepath="$PROJECT_DIR$/.idea/modules/rxml-parser/rxml-parser_main.iml" group="rxml-parser" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rxml-parser/rxml-parser_test.iml" filepath="$PROJECT_DIR$/.idea/modules/rxml-parser/rxml-parser_test.iml" group="rxml-parser" />
+    </modules>
+  </component>
+</project>
