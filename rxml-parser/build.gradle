@@ -1,0 +1,62 @@
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "io.reactivex:rxjava:1.1.9"
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7'
+    }
+}
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'maven-publish'
+
+task sourceJar(type: Jar) {
+    from sourceSets.main.allJava
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            groupId 'com.github.albertosh'
+            artifactId 'rxml-parser'
+            version rootProject.ext.version
+
+            artifact sourceJar {
+                classifier "sources"
+            }
+        }
+    }
+}
+
+bintray {
+    user = project.hasProperty('bintrayUser') ? project.property('bintrayUser') : System.getenv('BINTRAY_USER')
+    key = project.hasProperty('bintrayApiKey') ? project.property('bintrayApiKey') : System.getenv('BINTRAY_API_KEY')
+    publications = ['mavenJava']
+    pkg {
+        repo = 'maven'
+        name = 'rxml-parser'
+        licenses = ['MIT']
+        vcsUrl = 'https://github.com/AlbertoSH/RXMLParser.git'
+        issueTrackerUrl = 'https://github.com/AlbertoSH/RXMLParser/issues'
+        labels = ['Java', 'XML', 'RxJava']
+        publicDownloadNumbers = true
+        githubRepo = 'AlbertoSH/RXMLParser'
+        githubReleaseNotesFile = 'README.md'
+        version {
+            name = rootProject.ext.version
+            desc = "RXMLParser " + rootProject.ext.version
+            vcsTag = rootProject.ext.version
+        }
+    }
+}

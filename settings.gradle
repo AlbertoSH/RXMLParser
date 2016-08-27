@@ -1,0 +1,4 @@
+rootProject.name = 'rxml-parser-project'
+include 'rxml-parser'
+include 'rxml-parser-sample'
+
