@@ -33,7 +33,6 @@ public class RXMLParserTest {
                 = DocumentBuilderFactory.newInstance();
         DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
         return dBuilder.parse(file);
-
     }
 
     private static Float round(Float f) {
